@@ -49,49 +49,67 @@ doskey sqlite="C:\Users\2\Documents\sqlite\sqlite3.exe" $*
 doskey wsldir=cd "C:\Users\2\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs"
 doskey copy_wsldir =echo "C:\Users\2\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs" | clip
 doskey junction="C:\Users\2\Documents\Scripts\Junction\junction.exe"
-doskey git-bash="C:\Program Files\Git\git-bash.exe"
-doskey undo="C:\Users\2\Documents\git-tutorial\git-undo.bat"
-doskey ga=git add -A
-doskey gcm=git commit -m $*
-doskey giche=git checkout $*
-doskey gpom=git push origin master $*
 doskey exp=explorer $*
-::doskey gitlog=git log --date=format:"%%Y-%%m-%%d %%H:%%M" --pretty=format:"%%h%%x09%%ai%%x09%%Cblue%%s%%x0D"
-doskey gitlog=git log --pretty=format:"%%h%%x09%%ai%%x09%%Cblue%%s%%x0D"
 :: Notice "%%h" instead of "%h" AND "%%x0D" in the end - a fix for batch script.
 doskey colors="C:\Users\2\Documents\Task-Stack-Widget\task-data\colors.bat"
 :: QUICK CD NAVIGATE SHORTCUTS.
 doskey f1=cd C:\Users\2\Documents\Task-Stack-Widget\ 
 doskey f2=cd C:\Users\2\Documents\Task-Stack-Widget\task-data\
 doskey f3=cd C:\
+doskey f4=cd C:\Windows\Microsoft.NET
+doskey f5=cd C:\Users\2\Documents\Task-Stack-Widget\task-data\1206
 doskey reboot=shutdown /f /r
+doskey sleep=rundll32.exe powrprof.dll,SetSuspendState 0,1,0
+
+::git
+doskey gpom=git push origin master $*
+doskey giche=git checkout $*
+doskey gcm=git commit -m $*
+doskey undo="C:\Users\2\Documents\git-tutorial\git-undo.bat"
+doskey ga=git add -A
+doskey git-bash="C:\Program Files\Git\git-bash.exe"
 doskey gpu=git push origin master
 doskey gpull=git pull origin master
-doskey sleep=rundll32.exe powrprof.dll,SetSuspendState 0,1,0
+::doskey gitlog=git log --date=format:"%%Y-%%m-%%d %%H:%%M" --pretty=format:"%%h%%x09%%ai%%x09%%Cblue%%s%%x0D"
+doskey gitlog=git log --pretty=format:"%%h%%x09%%ai%%x09%%Cblue%%s%%x0D"
+
 doskey rovlc= "C:\Users\2\Documents\Task-Stack-Widget\task-data\1268\drops_moc_fild11_3_snap_nolightmap_20fps.mp4"
 doskey tsw=C:\Users\2\Documents\Task-Stack-Widget\run.bat
-doskey ildasm="C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\ildasm.exe" $*
-doskey csc324="C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe" $*
-doskey csc="C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe" $*
-doskey csc644="C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe" $*
 
-doskey f4=cd C:\Windows\Microsoft.NET
+
+::csharp
+doskey ildasm="C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\ildasm.exe" $*
+doskey csc="C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe" $*
+doskey csc324="C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe" $*
+doskey csc644="C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe" $*
 doskey ilasm644="C:\Windows\Microsoft.NET\Framework64\v4.0.30319\ilasm.exe" $*
 doskey ilasm324="C:\Windows\Microsoft.NET\Framework\v4.0.30319\ilasm.exe" $*
 doskey mdbg="C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\MDbg.0.1.0\tools\Mdbg.exe" $*
-doskey f5=cd C:\Users\2\Documents\Task-Stack-Widget\task-data\1206
+
 doskey wherecontexmenu=type C:\Users\2\Documents\Task-Stack-Widget\task-data\1282\wherecontexmenu.txt
+
+::django
 doskey dja="C:\Python36-64\Scripts\django-admin.exe" $*
-doskey cl="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64\cl.exe" $*
-doskey msvcdir=cd C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64
+
 doskey task=cd C:\Users\2\Documents\Task-Stack-Widget\task-data\$1
+
+::c++
+doskey msvcdir=cd C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64
+doskey cl="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64\cl.exe" $*
 doskey vcvars32="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars32.bat"
 doskey vcvars64="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat"
 doskey vcvarsall="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat"
-doskey gcl="C:\Users\2\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin\gcloud.cmd" $*
+
 doskey expcd=explorer %cd%
-doskey gstop="C:\Users\2\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin\gcloud.cmd compute instances stop instance-5"
-doskey gstop2="C:\Users\2\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin\gcloud.cmd compute instances stop instance-6"
-doskey gstart="C:\Users\2\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin\gcloud.cmd compute instances start instance-5"
-doskey gstart2="C:\Users\2\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin\gcloud.cmd compute instances start instance-6"
+
+::gcloud
+doskey gcl="C:\Users\2\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin\gcloud.cmd" $*
+doskey gstop="C:\Users\2\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin\gcloud.cmd" compute instances stop instance-5
+doskey gstop2="C:\Users\2\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin\gcloud.cmd" compute instances stop instance-6
+doskey gstart="C:\Users\2\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin\gcloud.cmd" compute instances start instance-5
+doskey gstart2="C:\Users\2\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin\gcloud.cmd" compute instances start instance-6
 doskey gcloud="C:\Users\2\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin\gcloud.cmd" $*
+doskey centos="C:\Users\2\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin\gcloud.cmd" beta compute --project "mystic-song-226805" ssh --zone "us-central1-a" "instance-6"
+doskey winserver="C:\Windows\System32\mstsc.exe" C:\Users\2\Documents\Task-Stack-Widget\task-data\1032\instance-5.rdp
+doskey ws="C:\Windows\System32\mstsc.exe" C:\Users\2\Documents\Task-Stack-Widget\task-data\1032\instance-5.rdp
+
