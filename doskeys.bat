@@ -34,6 +34,8 @@ doskey sh=C:\cygwin64\Cygwin.bat $*
 doskey sq=C:\sqlite\sqlite3.exe $*
 doskey procexp="C:\Users\2\Downloads\ProcessExplorer\procexp.exe"
 doskey p3=C:\Python39\python.exe -i $*
+doskey p36=C:\Python36\python.exe -i $*
+doskey p37=C:\Python37\python.exe -i $*
 ::doskey fixtab=C:\Python27\python.exe C:\Users\2\Documents\tab2spaces.py $*
 ::doskey jn=C:\Python36-64\Scripts\jupyter-notebook.exe $*
 ::doskey SqlLocalDB="C:\Program Files\Microsoft SQL Server\130\Tools\Binn\SqlLocalDB.exe" $*
@@ -72,7 +74,7 @@ doskey exp=explorer %CD% $*
 ::doskey f3=cd C:\
 ::doskey f4=cd C:\Windows\Microsoft.NET
 ::doskey f5=cd C:\Users\2\Documents\Task-Stack-Widget\task-data\1206
-doskey reboot=shutdown /f /r
+doskey reboot=shutdown /f /r /t 1
 doskey sleep=rundll32.exe powrprof.dll,SetSuspendState 0,1,0
 
 ::git
@@ -100,7 +102,7 @@ doskey g=git add -A $T$T git commit -m "$1" $T$T git push origin master
 ::doskey d3=echo DOSKEY B1 $1 ^&^& echo DOSKEY B2
 
 doskey rovlc= "C:\Users\2\Documents\Task-Stack-Widget\task-data\1268\drops_moc_fild11_3_snap_nolightmap_20fps.mp4"
-doskey tsw=C:\Users\2\Documents\Task-Stack-Widget\run.bat
+doskey tsw=cd %USERPROFILE%\Documents\Task-Stack-Widget $T$T %USERPROFILE%\Documents\Task-Stack-Widget\run.bat
 
 
 :: [CSHARP][C#]
@@ -117,7 +119,7 @@ doskey wherecontexmenu=type C:\Users\2\Documents\Task-Stack-Widget\task-data\128
 ::django
 doskey dja="C:\Python36-64\Scripts\django-admin.exe" $*
 
-doskey task=cd C:\Users\2\Documents\Task-Stack-Widget\task-data\$1
+doskey task=cd %USERPROFILE%\Documents\Task-Stack-Widget\task-data\$1
 
 ::c++
 doskey msvcdir=cd C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64
