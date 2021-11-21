@@ -110,7 +110,7 @@ class Window(QWidget):
                                 report.write(str(k) + "\t" + str(v))
                                 report.write("\n")
                             report.write("\n")
-                        report.write("#"*10 + "\n")
+                        report.write("#"*12 + "\n")
                     self.close()
                 else:
                     self.new_measurement()
