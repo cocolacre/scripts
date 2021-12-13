@@ -330,13 +330,6 @@ doskey grep=C:\cygwin64\bin\grep.exe $*
 doskey p3help=C:\Python39\Doc\python392.chm
 doskey anya=cd C:\Users\79951\Documents\Task-Stack-Widget\task-data\2673 $T$T C:\Python39\python.exe bidistacha-threads-generate-preserve-tasks.py
 
-doskey actvadm=net user vadim.phystech /active:yes
-doskey rnsadm=runas /user:THINKPAD-VADIMS\vadim.phystech /savecred C:\scripts\time-sync.bat
-::doskey tsy=C:\Windows\System32\cmd.exe /c "runas /user:vadim.phystech /savecred C:\scripts\time-sync.bat" 
-::doskey tsy=runas /user:vadim.phystech /savecred C:\scripts\time-sync.bat
-::doskey tsy=psexec \\%COMPUTERNAME% -u vadim.phystech -p paladin121 "w32tm /config /update"
-::doskey tsy=psexec \\%COMPUTERNAME% -u vadim.phystech -p paladin121 "C:\scripts\w32tm-run.bat"
-::doskey tsy=psexec \\%COMPUTERNAME% -u vadim.phystech -p palalddin121 "C:\scripts\w32tm-run.bat"
 doskey tsy=start "" "C:\scripts\timesync.lnk"
 
 doskey cleanup1=echo "PSAdmin.exe dism.exe /online /CleanupImage /StartComponentCleanup /ResetBase"
